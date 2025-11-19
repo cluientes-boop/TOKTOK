@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokTok Empresa — Soluciones para empresas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="TokTok Empresa: soluciones de vídeo, anuncios y analíticas para empresas que quieren conectar con su audiencia.">
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">TokTok <span class="tag">Empresa</span></div>
+        <nav class="main-nav">
+          <a href="#features">Características</a>
+          <a href="#pricing">Planes</a>
+          <a href="#contact">Contacto</a>
+          <a class="btn small" href="#contact">Solicitar demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Impulsa tu marca con vídeo corto</h1>
+            <p class="lead">TokTok Empresa ofrece herramientas de campaña, analíticas y soporte para que las empresas conecten con su público en la plataforma de vídeo más dinámica.</p>
+            <div class="hero-ctas">
+              <a class="btn primary" href="#contact">Solicitar demo</a>
+              <a class="btn ghost" href="#features">Ver características</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="mockphone">
+              <div class="video-placeholder">Vista previa de vídeo</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features container">
+        <h2>Características destacadas</h2>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="icon">📈</div>
+            <h3>Analíticas en tiempo real</h3>
+            <p>Mide el rendimiento de tus campañas con métricas detalladas y paneles personalizables.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">🎯</div>
+            <h3>Segmentación avanzada</h3>
+            <p>Llega a audiencias relevantes mediante intereses, ubicación y comportamiento.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">🤝</div>
+            <h3>Soporte y estrategia</h3>
+            <p>Gestores de cuenta dedicados para ayudarte a optimizar campañas y creatividad.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing container">
+        <h2>Planes</h2>
+        <div class="pricing-grid">
+          <div class="plan">
+            <h3>Básico</h3>
+            <p class="price">cobrar</p>
+            <ul>
+              <li>Integración limitada</li>
+              <li>1 campaña activa</li>
+              <li>Reportes básicos</li>
+            </ul>
+            <a class="btn" href="#contact">Comenzar</a>
+          </div>
+          <div class="plan popular">
+            <h3>Pro</h3>
+            <p class="price">$15/mes</p>
+            <ul>
+              <li>Campañas ilimitadas</li>
+              <li>Analíticas avanzadas</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <a class="btn primary" href="#contact">Pedir demo</a>
+          </div>
+          <div class="plan">
+            <h3>Enterprise</h3>
+            <p class="price">Personalizado</p>
+            <ul>
+              <li>Integraciones a medida</li>
+              <li>Cuenta dedicada</li>
+              <li>Acuerdos SLA</li>
+            </ul>
+            <a class="btn" href="#contact">Contactar</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contacta con nosotros</h2>
+        <p>Déjanos tus datos y nos pondremos en contacto para una demo personalizada.</p>
+        <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Gracias — nos pondremos en contacto pronto.');">
+          <input type="text" name="name" placeholder="Nombre" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <input type="text" name="company" placeholder="Empresa (opcional)">
+          <textarea name="message" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+          <button class="btn primary" type="submit">Solicitar demo</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> TokTok Empresa</div>
+        <div class="socials">
+          <a href="https://www.youtube.com/watch?v=_VNYfvYOaCw&list=RD_VNYfvYOaCw&start_radio=1">YOUTUBE</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+  </body>
+</html>
+
+
+
